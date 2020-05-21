@@ -20,16 +20,26 @@ namespace reimagined_lamp.Controllers
         }
 
         [HttpGet]
-        public CarDetails Get()
+        public String Get()
         {
-            return new CarDetails
-            {
-                Make = "Test",
-                Model = "Test",
-                Colour = "Test",
-                ExpiryDate = DateTime.Now,
-                MilageAtLastMOT = 0
-            };
+            return getCarDetails("XX10ABC");
+        }
+
+        public String getCarDetails(String reg){
+            var client = new RestClient("https://beta.check-mot.service.gov.uk/");
+            var request = new RestRequest("/trade/vehicles/mot-tests?registration=" + reg);
+            request.AddHeader("Accept", "application/json+v6");
+            request.AddHeader("x-api-key", "fZi8YcjrZN1cGkQeZP7Uaa4rTxua8HovaswPuIno");
+            var response = client.Get(request);
+            var content = response.Content; // Raw content as string
+            return content;
+            // return new CarDetails{
+            //     Make = response.Content.make,
+            //     Model = response.Content.model,
+            //     Colour = ,
+            //     ExpiryDate = ,
+            //     MilageAtLastMOT = 
+            // };
         }
     }
 }
