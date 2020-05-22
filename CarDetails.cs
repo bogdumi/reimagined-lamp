@@ -4,14 +4,12 @@ namespace reimagined_lamp
 {
     public class CarDetails
     {
-        public String Make { get; set; }
+        public String make { get; set; }
 
-        public String Model { get; set; }
+        public String model { get; set; }
 
-        public String Colour { get; set; }
+        public String primaryColour { get; set; }
 
-        public DateTime ExpiryDate { get; set; }
-
-        public int MilageAtLastMOT { get; set; }
+        public MOTTest[] motTests { get; set; }
     }
 }
