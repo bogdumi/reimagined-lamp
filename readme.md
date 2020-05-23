@@ -17,15 +17,16 @@
 ### Frontend:
 
 - Language: TypeScript
-- Framework: React.JS
-- Other modules:
+- UI Library: React.JS
+- Other Modules: Material-UI 
 
 ### Backend:
 
 - Language: C#
-- Web framework: ASP.NET Core
-- Other modules: RestShark
+- Web Framework: ASP.NET Core
+- Other Modules: RestShark
 
 ### Other services:
 
 - Versioning Control System: Git
+- Repository Hosting: GitHub
