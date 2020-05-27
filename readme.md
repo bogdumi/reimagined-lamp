@@ -37,3 +37,4 @@
 - Reorganise the frontend into reusable components
 - Implement frontend testing using Jest
 - Implement backend testing using either of MSTest or NUnit
+- Fix dark mode implementation
