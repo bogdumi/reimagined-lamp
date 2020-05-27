@@ -22,7 +22,7 @@ namespace reimagined_lamp.Controllers
 
         [HttpGet]
         public CarDetails Get() {
-            return getCarDetails("XX10ABC");
+            return getCarDetails("");
         }
         
         [HttpGet("{id}")]

@@ -87,10 +87,10 @@ export default function Home() {
     const [mode, setMode] = React.useState(lightMode);
     
     const [number, setNumber] = React.useState("")
-    const [make, setMake] = React.useState("Please check your MOT again");
+    const [make, setMake] = React.useState("Please check your MOT");
     const [model, setModel] = React.useState("");
-    const [colour, setColour] = React.useState("Invalid MOT");
-    const [motExpiration, setMotExpiration] = React.useState("Invalid MOT");
+    const [colour, setColour] = React.useState("Unknown");
+    const [motExpiration, setMotExpiration] = React.useState("Unknown");
     const [mileage, setMileage] = React.useState(0);
 
     const toggleMode = () => {
@@ -102,6 +102,12 @@ export default function Home() {
     
     const handleExpandClick = () => {
         setExpanded(!expanded);
+        setNumber("");
+        setMake("Please check your MOT");
+        setModel("");
+        setColour("Unknown");
+        setMotExpiration("Unknown");
+        setMileage(0);
     };
 
     const handleExpandClickAndSend = () => {
@@ -251,7 +257,7 @@ export default function Home() {
                                     </Typography>
                                 </CardActions>
                                 <CardActions>
-                                    <Button variant="outlined" color="primary" className={classes.buttonSec} onClick={handleExpandClick}>
+                                    <Button variant="outlined" color="secondary" className={classes.buttonSec} onClick={handleExpandClick}>
                                         Back
                                     </Button>
                                 </CardActions>
