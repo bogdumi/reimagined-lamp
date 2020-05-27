@@ -17,8 +17,8 @@
 ### Frontend:
 
 - Language: TypeScript
-- UI Library: React.JS
-- Other Modules: Material-UI 
+- Frontend Library: React.JS
+- UI Framework: Material-UI 
 
 ### Backend:
 
@@ -30,3 +30,9 @@
 
 - Versioning Control System: Git
 - Repository Hosting: GitHub
+
+## Future development path
+
+- Implement frontend testing using Jest
+- Implement backend testing using either of MSTest or NUnit
+- Reorganise the frontend into reusable components
