@@ -33,6 +33,7 @@
 
 ## Future development path
 
+- Implement better error handling in both the frontend and the backend (eg. for invalid/partially valid input) 
+- Reorganise the frontend into reusable components
 - Implement frontend testing using Jest
 - Implement backend testing using either of MSTest or NUnit
-- Reorganise the frontend into reusable components
