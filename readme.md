@@ -3,6 +3,7 @@
 ## General information
 
 - `reimagined-lamp` is a simple web application that gets a car’s key details and MOT status for its registration number.
+- This is a demo application written over a couple of days to be used in one of my past interviews for a Full Stack role in Software Engineering Internship position
 
 ## Prerequisites 
 
