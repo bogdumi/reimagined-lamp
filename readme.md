@@ -2,7 +2,7 @@
 
 ## General information
 
-- This is a demo application written over a couple of days to be used in one of my past interviews for a Full Stack role in Software Engineering Internship position
+- This is a demo application written over a couple of days to be used in one of my past interviews for a Full Stack role in Software Engineering Internship position. It is not maintainable in its currents state and the short development time is mirrored in the lack of reusable React components, unit tests, etc. Nevertheless, I drafter up ideas for how to improve this at the end of this `README`
 - `reimagined-lamp` is a simple web application that gets a car’s key details and MOT status for its registration number.
 
 ## Prerequisites 
